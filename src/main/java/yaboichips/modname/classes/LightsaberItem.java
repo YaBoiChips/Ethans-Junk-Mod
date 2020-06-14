@@ -120,6 +120,7 @@ public class LightsaberItem extends TieredItem {
             }
         }
         {
+            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.green_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.green_lightsaber)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.green_lightsaber_handle));
@@ -127,6 +128,7 @@ public class LightsaberItem extends TieredItem {
             }
         }
         {
+            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.red_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.red_lightsaber)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.red_lightsaber_handle));
@@ -134,6 +136,7 @@ public class LightsaberItem extends TieredItem {
             }
         }
         {
+            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.purple_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.purple_lightsaber)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.purple_lightsaber_handle));

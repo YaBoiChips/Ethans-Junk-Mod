@@ -36,24 +36,30 @@ public class LightsaberHandleClass extends Item {
             }
         }
         {
+            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.green_lightsaber_handle) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.green_lightsaber_handle)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.green_lightsaber));
                 player.playSound(SoundList.OPEN, 3.0f, 1.0f);
+                Minecraft.getInstance().getSoundHandler().play(new SaberBuzzEvent((PlayerEntity)player));
             }
         }
         {
+            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.red_lightsaber_handle) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.red_lightsaber_handle)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.red_lightsaber));
                 player.playSound(SoundList.OPEN, 3.0f, 1.0f);
+                Minecraft.getInstance().getSoundHandler().play(new SaberBuzzEvent((PlayerEntity)player));
             }
         }
         {
+            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.purple_lightsaber_handle) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.purple_lightsaber_handle)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.purple_lightsaber));
                 player.playSound(SoundList.OPEN, 3.0f, 1.0f);
+                Minecraft.getInstance().getSoundHandler().play(new SaberBuzzEvent((PlayerEntity)player));
             }
         }
         return new ActionResult<ItemStack>(ActionResultType.SUCCESS, item);
