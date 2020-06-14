@@ -39,14 +39,14 @@ public class ItemClass {
                 (new ArmorItem(Flannel.TEST, EquipmentSlotType.LEGS, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("flannel_leggings")),
                 (new ArmorItem(Flannel.TEST, EquipmentSlotType.FEET, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("flannel_boots")),
 
-                ItemList.blue_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 7, -2.4f, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("blue_lightsaber")),
-                ItemList.green_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 7, -2.4f, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("green_lightsaber")),
-                ItemList.purple_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 7, -2.4f, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("purple_lightsaber")),
-                ItemList.red_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 8, -2.4f, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("red_lightsaber")));
+                ItemList.blue_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -2.4f, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("blue_lightsaber")),
+                ItemList.green_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -2.4f, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("green_lightsaber")),
+                ItemList.purple_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -2.4f, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("purple_lightsaber")),
+                ItemList.red_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 10, -2.4f, new Item.Properties().group(ModName.JUNKTAB)).setRegistryName("red_lightsaber")));
     }
 
     public enum ModItemTier implements IItemTier {
-        SABER_TIER(4, 1500, 0.1f, 3.0f, 66, () -> {
+        SABER_TIER(4, -1, 0.1f, 3.0f, 66, () -> {
             return Ingredient.fromItems(ItemList.steel_ingot);
         });
 

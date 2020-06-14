@@ -11,6 +11,18 @@ public class BlockList {
     public static Block white_concrete_stair;
     public static Block orange_concrete_stair;
     public static Block cyan_concrete_stair;
+    public static Block blue_concrete_stair;
+    public static Block light_blue_concrete_stair;
+    public static Block lime_concrete_stair;
+    public static Block red_concrete_stair;
+    public static Block green_concrete_stair;
+    public static Block yellow_concrete_stair;
+    public static Block gray_concrete_stair;
+    public static Block purple_concrete_stair;
+    public static Block brown_concrete_stair;
+    public static Block pink_concrete_stair;
+    public static Block light_gray_concrete_stair;
+    public static Block magenta_concrete_stair;
     public static Block white_neon_block;
     public static Block red_neon_block;
     public static Block perfectly_clear_glass;

@@ -60,10 +60,10 @@ public class LightsaberItem extends TieredItem {
      * the damage on the stack.
      */
     public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        stack.damageItem(0, attacker, (p_220045_0_) -> {
+        target.setFire(10);
+        stack.damageItem(1, attacker, (p_220045_0_) -> {
             p_220045_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
         });
-        target.setFire(10);
         return true;
     }
 
@@ -79,7 +79,7 @@ public class LightsaberItem extends TieredItem {
             iworld.playSound(playerentity, blockpos, SoundEvents.ITEM_FLINTANDSTEEL_USE, SoundCategory.BLOCKS, 1.0F, random.nextFloat() * 0.4F + 0.8F);
             iworld.setBlockState(blockpos, blockstate.with(BlockStateProperties.LIT, Boolean.valueOf(true)), 11);
             if (playerentity != null) {
-                context.getItem().damageItem(0, playerentity, (p_219999_1_) -> {
+                context.getItem().damageItem(1, playerentity, (p_219999_1_) -> {
                     p_219999_1_.sendBreakAnimation(context.getHand());
                 });
             }
@@ -94,7 +94,7 @@ public class LightsaberItem extends TieredItem {
                 ItemStack itemstack = context.getItem();
                 if (playerentity instanceof ServerPlayerEntity) {
                     CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayerEntity) playerentity, blockpos1, itemstack);
-                    itemstack.damageItem(0, playerentity, (p_219998_1_) -> {
+                    itemstack.damageItem(1, playerentity, (p_219998_1_) -> {
                         p_219998_1_.sendBreakAnimation(context.getHand());
                     });
                 }

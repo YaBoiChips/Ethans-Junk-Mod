@@ -1,5 +1,6 @@
 package yaboichips.modname.lists;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
 
@@ -10,6 +11,18 @@ public class ItemList {
     public static Item black_concrete_stair;
     public static Item orange_concrete_stair;
     public static Item cyan_concrete_stair;
+    public static Item blue_concrete_stair;
+    public static Item light_blue_concrete_stair;
+    public static Item lime_concrete_stair;
+    public static Item red_concrete_stair;
+    public static Item green_concrete_stair;
+    public static Item yellow_concrete_stair;
+    public static Item gray_concrete_stair;
+    public static Item purple_concrete_stair;
+    public static Item pink_concrete_stair;
+    public static Item brown_concrete_stair;
+    public static Item light_gray_concrete_stair;
+    public static Item magenta_concrete_stair;
     public static Item white_neon_block;
     public static Item red_neon_block;
     public static Item perfectly_clear_glass;
