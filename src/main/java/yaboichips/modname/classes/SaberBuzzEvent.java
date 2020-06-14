@@ -14,7 +14,7 @@ public class SaberBuzzEvent extends TickableSound {
         this.player = playerIn;
         this.repeat = true;
         this.repeatDelay = 0;
-        this.volume = 0.3F;
+        this.volume = 0.1F;
         this.x = (float)playerIn.getPosX();
         this.y = (float)playerIn.getPosY();
         this.z = (float)playerIn.getPosZ();

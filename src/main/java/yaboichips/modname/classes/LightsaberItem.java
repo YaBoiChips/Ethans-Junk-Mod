@@ -29,7 +29,6 @@ import yaboichips.modname.lists.SoundList;
 public class LightsaberItem extends TieredItem {
     private final float attackDamage;
     private final float attackSpeed;
-    static Minecraft mc = Minecraft.getInstance();
 
     public LightsaberItem(IItemTier tier, int attackDamageIn, float attackSpeedIn, Item.Properties builder) {
         super(tier, builder);
@@ -150,7 +149,7 @@ public class LightsaberItem extends TieredItem {
 
     public boolean onBlockDestroyed(ItemStack stack, World worldIn, BlockState state, BlockPos pos, LivingEntity entityLiving) {
         if (state.getBlockHardness(worldIn, pos) != 0.0F) {
-            stack.damageItem(2, entityLiving, (p_220044_0_) -> {
+            stack.damageItem(0, entityLiving, (p_220044_0_) -> {
                 p_220044_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
             });
         }
