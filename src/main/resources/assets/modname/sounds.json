@@ -1,0 +1,69 @@
+{
+  "mooseentitiy.ambient": {
+    "catagory": "entity",
+    "subtitle": "mooseentitiy.ambient",
+    "sounds": [
+      {
+        "name": "modname:entity/mooseentitiy.ambient1",
+        "stream": false
+      },
+      {
+        "name": "modname:entity/mooseentitiy.ambient",
+        "stream": false
+      }
+
+    ]
+  },
+
+
+    "mooseentitiy.death": {
+      "catagory": "entity",
+      "subtitle": "mooseentitiy.death",
+      "sounds": [
+        {
+          "name": "modname:entity/mooseentitiy.death",
+          "stream": false
+        }
+      ]
+    },
+  "mooseentitiy.hurt": {
+    "catagory": "entity",
+    "subtitle": "mooseentitiy.hurt",
+    "sounds": [
+      {
+        "name": "modname:entity/mooseentitiy.hurt",
+        "stream": false
+      }
+    ]
+  },
+  "lightsaber.buzz": {
+    "catagory": "ambient",
+    "subtitle": "lightsaber.buzz",
+    "sounds": [
+      {
+        "name": "modname:sabersounds/lightsaber.buzz",
+        "stream": false
+      }
+    ]
+  },
+  "lightsaber.open": {
+    "catagory": "ambient",
+    "subtitle": "lightsaber.open",
+    "sounds": [
+      {
+        "name": "modname:sabersounds/lightsaber.open",
+        "stream": false
+      }
+    ]
+  },
+  "lightsaber.close": {
+    "catagory": "ambient",
+    "subtitle": "lightsaber.close",
+    "sounds": [
+      {
+        "name": "modname:sabersounds/lightsaber.close",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "modname:block/off_neon_block" },
+    "lit=true": { "model": "modname:block/white_neon_block" }
+  }
+}

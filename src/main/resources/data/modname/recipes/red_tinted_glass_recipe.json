@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "minecraft:red_dye"
+        },
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "minecraft:glass"
+        },
+        {
+            "item": "minecraft:iron_nugget"
+        },
+        {
+            "item": "minecraft:glass"
+        }
+    ],
+    "result": {
+        "item": "modname:red_tinted_glass",
+        "count": 7
+    },
+    "group": "TintedGlass"
+}

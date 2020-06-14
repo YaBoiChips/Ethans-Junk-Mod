@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iIi",
+        " i "
+    ],
+    "key": {
+        "i": {
+            "item": "modname:steel_ingot"
+        },
+        "I": {
+            "item": "modname:steel_block"
+        }
+    },
+    "result": {
+        "item": "modname:pommel",
+        "count": 1
+    }
+}
