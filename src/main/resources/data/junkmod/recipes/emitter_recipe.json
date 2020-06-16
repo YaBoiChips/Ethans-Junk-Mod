@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iGi",
+        " i "
+    ],
+    "key": {
+        "i": {
+            "item": "junkmod:steel_ingot"
+        },
+        "G": {
+            "item": "minecraft:glowstone_dust"
+        }
+    },
+    "result": {
+        "item": "junkmod:emitter",
+        "count":  1
+    }
+}

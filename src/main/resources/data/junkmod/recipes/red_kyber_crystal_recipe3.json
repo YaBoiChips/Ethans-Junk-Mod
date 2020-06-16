@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#D#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dragon_breath"
+        },
+        "D": {
+            "item": "junkmod:purple_kyber_crystal"
+        }
+    },
+    "result": {
+        "item": "junkmod:red_kyber_crystal"
+    },
+    "group": "kyber crystal"
+}

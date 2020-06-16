@@ -1,0 +1,6 @@
+{
+"parent": "block/cube_all",
+"textures": {
+"all": "junkmod:block/tinted_glass_block"
+}
+}

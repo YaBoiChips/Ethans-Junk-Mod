@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "junkmod:block/hardwood_planks",
+    "top": "junkmod:block/hardwood_planks",
+    "side": "junkmod:block/hardwood_planks"
+  }
+}

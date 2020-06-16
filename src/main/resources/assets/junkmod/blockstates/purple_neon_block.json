@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "junkmod:block/off_neon_block" },
+    "lit=true": { "model": "junkmod:block/purple_neon_block" }
+  }
+}

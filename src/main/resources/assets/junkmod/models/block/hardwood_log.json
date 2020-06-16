@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "junkmod:block/hardwood_log_top",
+    "side": "junkmod:block/hardwood_log"
+  }
+}

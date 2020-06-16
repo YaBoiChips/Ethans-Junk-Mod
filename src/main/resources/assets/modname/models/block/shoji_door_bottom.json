@@ -1,7 +1,0 @@
-{
-  "parent": "block/door_bottom",
-  "textures": {
-    "bottom": "modname:block/shoji_door_bottom",
-    "top": "modname:block/shoji_door_top"
-  }
-}

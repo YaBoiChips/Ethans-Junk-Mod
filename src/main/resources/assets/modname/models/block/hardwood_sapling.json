@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "modname:block/hardwood_sapling"
-  }
-}

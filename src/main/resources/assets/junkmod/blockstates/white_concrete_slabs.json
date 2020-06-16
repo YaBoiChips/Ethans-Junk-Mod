@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "junkmod:block/white_concrete_slabs" },
+    "type=top": { "model": "junkmod:block/white_concrete_slabs_top" },
+    "type=double": { "model": "block/white_concrete" }
+  }
+}

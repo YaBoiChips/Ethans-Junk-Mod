@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "junkmod:hardwood_log"
+        }
+    ],
+    "result": {
+        "item": "junkmod:hardwood_planks",
+        "count": 4
+    }
+}

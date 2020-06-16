@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "junkmod:block/light_blue_neon_block"
+  }
+}

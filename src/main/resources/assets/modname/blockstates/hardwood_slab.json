@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "type=bottom": { "model": "modname:block/hardwood_slab" },
-    "type=top": { "model": "modname:block/hardwood_slab_top" },
-    "type=double": { "model": "modname:block/hardwood_planks" }
-  }
-}

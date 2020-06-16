@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iIi",
+        " i "
+    ],
+    "key": {
+        "i": {
+            "item": "junkmod:steel_ingot"
+        },
+        "I": {
+            "item": "junkmod:steel_block"
+        }
+    },
+    "result": {
+        "item": "junkmod:pommel",
+        "count": 1
+    }
+}

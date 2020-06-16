@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "junkmod:hilt"
+        },
+        {
+            "item": "junkmod:red_kyber_crystal"
+        }
+    ],
+    "result": {
+        "item": "junkmod:red_lightsaber",
+        "count": 1
+    }
+}

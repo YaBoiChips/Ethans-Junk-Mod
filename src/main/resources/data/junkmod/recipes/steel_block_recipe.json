@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "junkmod:steel_ingot"
+        }
+    },
+    "result": {
+        "item": "junkmod:steel_block",
+        "count": 1
+    }
+}

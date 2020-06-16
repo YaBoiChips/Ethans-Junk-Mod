@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "junkmod:block/holy_hand_grenade_top",
+    "side": "junkmod:block/holy_hand_grenade"
+  }
+}

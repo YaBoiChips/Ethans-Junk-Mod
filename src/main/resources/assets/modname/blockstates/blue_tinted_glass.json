@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "lit=false": { "model": "modname:block/untinted_glass" },
-    "lit=true": { "model": "modname:block/blue_tinted_glass" }
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "modname:block/hardwood_planks",
-    "top": "modname:block/hardwood_planks",
-    "side": "modname:block/hardwood_planks"
-  }
-}

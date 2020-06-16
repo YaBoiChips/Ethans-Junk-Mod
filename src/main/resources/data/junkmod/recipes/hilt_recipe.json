@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "Y",
+        "P"
+    ],
+    "key": {
+        "#": {
+            "item": "junkmod:emitter"
+        },
+        "Y": {
+            "item": "junkmod:handle"
+        },
+        "P": {
+            "item": "junkmod:pommel"
+        }
+    },
+    "result": {
+        "item": "junkmod:hilt",
+        "count": 1
+    }
+}

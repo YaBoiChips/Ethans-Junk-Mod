@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "junkmod:block/shoji_door_bottom",
+    "top": "junkmod:block/shoji_door_top"
+  }
+}

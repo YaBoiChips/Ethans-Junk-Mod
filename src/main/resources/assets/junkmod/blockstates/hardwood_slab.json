@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "junkmod:block/hardwood_slab" },
+    "type=top": { "model": "junkmod:block/hardwood_slab_top" },
+    "type=double": { "model": "junkmod:block/hardwood_planks" }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "   "
+    ],
+    "key": {
+        "#": {
+            "item": "junkmod:flannel"
+        }
+    },
+    "result": {
+        "item": "junkmod:flannel_helmet",
+        "count": 1
+    }
+}

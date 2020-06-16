@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":    { "model": "junkmod:block/hardwood_log" },
+    "axis=z":     { "model": "junkmod:block/hardwood_log", "x": 90 },
+    "axis=x":     { "model": "junkmod:block/hardwood_log", "x": 90, "y": 90 }
+  }
+}

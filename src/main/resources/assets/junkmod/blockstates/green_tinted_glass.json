@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "junkmod:block/untinted_glass" },
+    "lit=true": { "model": "junkmod:block/green_tinted_glass" }
+  }
+}

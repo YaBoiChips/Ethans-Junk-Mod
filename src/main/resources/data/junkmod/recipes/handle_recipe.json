@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iRi",
+        "iLi",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "junkmod:steel_ingot"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "L": {
+            "item": "minecraft:lever"
+        }
+    },
+    "result": {
+        "item": "junkmod:handle",
+        "count": 1
+    }
+}
