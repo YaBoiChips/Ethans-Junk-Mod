@@ -82,10 +82,10 @@ public class ItemRegistry {
                 ItemList.pommel = new Item(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("pommel"),
                 ItemList.hilt = new Item(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("hilt"),
                 ItemList.pebble = new PebbleItem(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("pebble"),
-                ItemList.blue_lightsaber_handle = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("blue_lightsaber_handle"),
-                ItemList.green_lightsaber_handle = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("green_lightsaber_handle"),
-                ItemList.red_lightsaber_handle = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("red_lightsaber_handle"),
-                ItemList.purple_lightsaber_handle = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("purple_lightsaber_handle"),
+                ItemList.blue_lightsaber_hilt = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("blue_lightsaber_hilt"),
+                ItemList.green_lightsaber_hilt = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("green_lightsaber_hilt"),
+                ItemList.red_lightsaber_hilt = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("red_lightsaber_hilt"),
+                ItemList.purple_lightsaber_hilt = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("purple_lightsaber_hilt"),
                 ItemList.moose_spawn_egg = new SpawnEggItem(ModEntityTypes.MOOSE_ENTITY, 1769984, 4400155, (new Item.Properties()).group(JunkMod.JUNKTAB)).setRegistryName("moose_spawn_egg"),
                 ItemList.flannel = new BlockItem(BlockList.flannel, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName(BlockList.flannel.getRegistryName()));
     }

@@ -5,8 +5,12 @@ import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -19,6 +23,7 @@ import org.apache.logging.log4j.Logger;
 import yaboichips.JunkMod.classes.ModEntityTypes;
 import yaboichips.JunkMod.client.entity.render.MooseRender;
 import yaboichips.JunkMod.lists.BlockList;
+import yaboichips.JunkMod.lists.ItemList;
 import yaboichips.JunkMod.texture.renders.CutOutRenders;
 import yaboichips.JunkMod.world.feature.trees.treegenerator.TreeGenerator;
 import yaboichips.JunkMod.world.oregenerator.OreGenerator;
@@ -43,16 +48,17 @@ public class JunkMod {
     }
 
     private void commonSetup(FMLCommonSetupEvent e) {
-        LOGGER.debug("E&B Modded Junk: Common Setup event starting...");
+        LOGGER.debug("Ethan's Junk Mod: Common Setup event starting...");
         OreGenerator.addFeatures();
         TreeGenerator.addFeatures();
-        LOGGER.info("E&B Modded Junk: Common Setup event finished.");
+        LOGGER.info("Ethan's Junk Mod: Common Setup event finished.");
     }
 
     private void clientSetup(FMLClientSetupEvent e) {
-        LOGGER.debug("E&B Modded Junk: Client Setup event starting...");
+        LOGGER.debug("Ethan's Junk Mod: Client Setup event starting...");
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.MOOSE_ENTITY, MooseRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.PEBBLE, new IRenderFactory<Entity>()
+
         {
             @Override
             public EntityRenderer<? super Entity> createRenderFor(EntityRendererManager manager)
@@ -60,7 +66,7 @@ public class JunkMod {
                 return new SpriteRenderer(manager, Minecraft.getInstance().getItemRenderer());
             }
         });
-        LOGGER.info("E&B Modded Junk: Client Setup event finished.");
+        LOGGER.info("Ethan's Junk Mod: Client Setup event finished.");
     }
 
 

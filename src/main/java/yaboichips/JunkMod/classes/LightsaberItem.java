@@ -106,7 +106,7 @@ public class LightsaberItem extends TieredItem {
             if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.blue_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.blue_lightsaber)));
-                player.inventory.add(player.inventory.getSlotFor(new ItemStack(ItemList.blue_lightsaber)), new ItemStack(ItemList.blue_lightsaber_handle));
+                player.inventory.add(player.inventory.getSlotFor(new ItemStack(ItemList.blue_lightsaber)), new ItemStack(ItemList.blue_lightsaber_hilt));
                 player.playSound(SoundList.CLOSE, 5.0f, 1.0f);
 
             }
@@ -115,7 +115,7 @@ public class LightsaberItem extends TieredItem {
             if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.green_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.green_lightsaber)));
-                player.inventory.addItemStackToInventory(new ItemStack(ItemList.green_lightsaber_handle));
+                player.inventory.addItemStackToInventory(new ItemStack(ItemList.green_lightsaber_hilt));
                 player.playSound(SoundList.CLOSE, 5.0f, 1.0f);
             }
         }
@@ -123,7 +123,7 @@ public class LightsaberItem extends TieredItem {
             if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.red_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.red_lightsaber)));
-                player.inventory.addItemStackToInventory(new ItemStack(ItemList.red_lightsaber_handle));
+                player.inventory.addItemStackToInventory(new ItemStack(ItemList.red_lightsaber_hilt));
                 player.playSound(SoundList.CLOSE, 5.0f, 1.0f);
             }
         }
@@ -131,11 +131,11 @@ public class LightsaberItem extends TieredItem {
             if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.purple_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.purple_lightsaber)));
-                player.inventory.addItemStackToInventory(new ItemStack(ItemList.purple_lightsaber_handle));
+                player.inventory.addItemStackToInventory(new ItemStack(ItemList.purple_lightsaber_hilt));
                 player.playSound(SoundList.CLOSE, 5.0f, 1.0f);
             }
         }
-        return new ActionResult<ItemStack>(ActionResultType.SUCCESS, item);
+        return new ActionResult<>(ActionResultType.SUCCESS, item);
     }
 
 

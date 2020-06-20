@@ -72,10 +72,10 @@ public class ItemList {
     public static Item green_lightsaber;
     public static Item blue_lightsaber;
     public static Item red_lightsaber;
-    public static Item purple_lightsaber_handle;
-    public static Item green_lightsaber_handle;
-    public static Item blue_lightsaber_handle;
-    public static Item red_lightsaber_handle;
+    public static Item purple_lightsaber_hilt;
+    public static Item green_lightsaber_hilt;
+    public static Item blue_lightsaber_hilt;
+    public static Item red_lightsaber_hilt;
     public static Item marthas_drumstick_cake;
     public static Item moose_spawn_egg;
     public static Item pebble;

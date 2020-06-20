@@ -34,15 +34,15 @@ public class ItemClass {
     public static void registerItems(final RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
 
-                (new ArmorItem(Flannel.TEST, EquipmentSlotType.HEAD, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_helmet")),
-                (new ArmorItem(Flannel.TEST, EquipmentSlotType.CHEST, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_chestplate")),
-                (new ArmorItem(Flannel.TEST, EquipmentSlotType.LEGS, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_leggings")),
-                (new ArmorItem(Flannel.TEST, EquipmentSlotType.FEET, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_boots")),
+                (new ArmorItem(Flannel.FLANNEL, EquipmentSlotType.HEAD, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_helmet")),
+                (new ArmorItem(Flannel.FLANNEL, EquipmentSlotType.CHEST, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_chestplate")),
+                (new ArmorItem(Flannel.FLANNEL, EquipmentSlotType.LEGS, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_leggings")),
+                (new ArmorItem(Flannel.FLANNEL, EquipmentSlotType.FEET, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_boots")),
 
-                ItemList.blue_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -2.4f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("blue_lightsaber")),
-                ItemList.green_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -2.4f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("green_lightsaber")),
-                ItemList.purple_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -2.4f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("purple_lightsaber")),
-                ItemList.red_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 10, -2.4f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("red_lightsaber")));
+                ItemList.blue_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -1.2f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("blue_lightsaber")),
+                ItemList.green_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -1.2f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("green_lightsaber")),
+                ItemList.purple_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -1.2f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("purple_lightsaber")),
+                ItemList.red_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 10, -1.2f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("red_lightsaber")));
     }
 
     public enum ModItemTier implements IItemTier {
@@ -98,7 +98,7 @@ public class ItemClass {
     }
 
     public enum Flannel implements IArmorMaterial {
-        TEST(JunkMod.JUNKMOD + ":flannel", 5, new int[]{1, 2, 3, 1}, 9, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f, () -> {
+        FLANNEL(JunkMod.JUNKMOD + ":flannel", 5, new int[]{1, 2, 3, 1}, 9, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f, () -> {
             return Ingredient.fromItems(ItemList.flannel);
         });
 

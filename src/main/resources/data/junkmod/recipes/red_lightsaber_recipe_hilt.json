@@ -5,11 +5,11 @@
             "item": "junkmod:hilt"
         },
         {
-            "item": "junkmod:green_kyber_crystal"
+            "item": "junkmod:red_kyber_crystal"
         }
     ],
     "result": {
-        "item": "junkmod:green_lightsaber",
+        "item": "junkmod:red_lightsaber_hilt",
         "count": 1
     }
 }
