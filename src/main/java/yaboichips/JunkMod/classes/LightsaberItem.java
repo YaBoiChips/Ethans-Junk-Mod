@@ -103,35 +103,35 @@ public class LightsaberItem extends TieredItem {
     public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player, Hand handIn) {
         ItemStack item = player.getHeldItem(handIn);
         {
-            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.blue_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.blue_lightsaber)));
                 player.inventory.add(player.inventory.getSlotFor(new ItemStack(ItemList.blue_lightsaber)), new ItemStack(ItemList.blue_lightsaber_hilt));
+                if(world.isRemote)
                 player.playSound(SoundList.CLOSE, 5.0f, 1.0f);
 
             }
         }
         {
-            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.green_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.green_lightsaber)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.green_lightsaber_hilt));
+                if(world.isRemote)
                 player.playSound(SoundList.CLOSE, 5.0f, 1.0f);
             }
         }
         {
-            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.red_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.red_lightsaber)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.red_lightsaber_hilt));
+                if(world.isRemote)
                 player.playSound(SoundList.CLOSE, 5.0f, 1.0f);
             }
         }
         {
-            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.purple_lightsaber) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.purple_lightsaber)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.purple_lightsaber_hilt));
+                if(world.isRemote)
                 player.playSound(SoundList.CLOSE, 5.0f, 1.0f);
             }
         }

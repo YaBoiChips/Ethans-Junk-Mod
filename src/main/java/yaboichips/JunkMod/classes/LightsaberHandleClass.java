@@ -23,38 +23,38 @@ public class LightsaberHandleClass extends Item {
     public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player, Hand handIn) {
         ItemStack item = player.getHeldItem(handIn);
         {
-            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.blue_lightsaber_hilt) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.blue_lightsaber_hilt)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.blue_lightsaber));
+                if(world.isRemote)
                 player.playSound(SoundList.OPEN, 3.0f, 1.0f);
                 Minecraft.getInstance().getSoundHandler().play(new SaberBuzzEvent(player));
 
             }
         }
         {
-            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.green_lightsaber_hilt) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.green_lightsaber_hilt)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.green_lightsaber));
+                if(world.isRemote)
                 player.playSound(SoundList.OPEN, 3.0f, 1.0f);
                 Minecraft.getInstance().getSoundHandler().play(new SaberBuzzEvent(player));
             }
         }
         {
-            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.red_lightsaber_hilt) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.red_lightsaber_hilt)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.red_lightsaber));
+                if(world.isRemote)
                 player.playSound(SoundList.OPEN, 3.0f, 1.0f);
                 Minecraft.getInstance().getSoundHandler().play(new SaberBuzzEvent(player));
             }
         }
         {
-            if(world.isRemote)
             if (player.getHeldItemMainhand().getItem() == ItemList.purple_lightsaber_hilt) {
                 player.inventory.removeStackFromSlot(player.inventory.getSlotFor(new ItemStack(ItemList.purple_lightsaber_hilt)));
                 player.inventory.addItemStackToInventory(new ItemStack(ItemList.purple_lightsaber));
+                if(world.isRemote)
                 player.playSound(SoundList.OPEN, 3.0f, 1.0f);
                 Minecraft.getInstance().getSoundHandler().play(new SaberBuzzEvent(player));
             }
