@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#T#",
+        "TWT",
+        "#T#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gunpowder"
+        },
+        "T": {
+            "item": "minecraft:tnt"
+        },
+        "W": {
+            "item": "minecraft:wither_rose"
+        }
+    },
+    "result": {
+        "item": "junkmod:holy_hand_grenade",
+        "count": 1
+    }
+}
