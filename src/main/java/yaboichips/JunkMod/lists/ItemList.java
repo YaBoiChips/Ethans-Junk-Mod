@@ -32,7 +32,6 @@ public class ItemList {
     public static Item purple_neon_block;
     public static Item light_blue_neon_block;
     public static Item orange_neon_block;
-    public static Item asphalt;
     public static Item flannel;
     public static Item red_tinted_glass;
     public static Item yellow_tinted_glass;

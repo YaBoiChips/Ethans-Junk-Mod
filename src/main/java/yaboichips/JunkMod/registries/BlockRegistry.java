@@ -49,7 +49,6 @@ public class BlockRegistry {
                 BlockList.purple_neon_block = new BlockProperties.NeonBlock("purple_neon_block"),
                 BlockList.light_blue_neon_block = new BlockProperties.NeonBlock("light_blue_neon_block"),
                 BlockList.yellow_neon_block = new BlockProperties.NeonBlock("yellow_neon_block"),
-                BlockList.asphalt = new Block(create(ROCK).hardnessAndResistance(6.0f, 1.5f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE)).setRegistryName("asphalt"),
                 BlockList.steel_block = new BlockProperties.MetalBlocks("steel_block"),
                 BlockList.lattice = new BlockProperties.Lattice("lattice"),
                 BlockList.blue_tinted_glass = new BlockProperties.TransparentBlocks("blue_tinted_glass"),

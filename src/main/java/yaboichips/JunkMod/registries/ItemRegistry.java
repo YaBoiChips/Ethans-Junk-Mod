@@ -45,7 +45,6 @@ public class ItemRegistry {
                 ItemList.light_blue_neon_block = new BlockItem(BlockList.light_blue_neon_block, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName(BlockList.light_blue_neon_block.getRegistryName()),
                 ItemList.orange_neon_block = new BlockItem(BlockList.orange_neon_block, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName(BlockList.orange_neon_block.getRegistryName()),
                 ItemList.yellow_neon_block = new BlockItem(BlockList.yellow_neon_block, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName(BlockList.yellow_neon_block.getRegistryName()),
-                ItemList.asphalt = new BlockItem(BlockList.asphalt, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName(BlockList.asphalt.getRegistryName()),
                 ItemList.lattice = new BlockItem(BlockList.lattice, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName(BlockList.lattice.getRegistryName()),
                 ItemList.shoji = new BlockItem(BlockList.shoji, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName(BlockList.shoji.getRegistryName()),
                 ItemList.shoji_door = new BlockItem(BlockList.shoji_door, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName(BlockList.shoji_door.getRegistryName()),

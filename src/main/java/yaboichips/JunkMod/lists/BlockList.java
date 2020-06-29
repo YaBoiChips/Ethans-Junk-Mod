@@ -34,7 +34,6 @@ public class BlockList {
     public static Block green_neon_block;
     public static Block funny_neon_block;
     public static Block orange_neon_block;
-    public static Block asphalt;
     public static Block flannel;
     public static Block red_tinted_glass;
     public static Block yellow_tinted_glass;
