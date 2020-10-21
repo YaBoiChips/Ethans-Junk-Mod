@@ -21,6 +21,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import yaboichips.JunkMod.classes.ModEntityTypes;
+import yaboichips.JunkMod.classes.ModEvents;
+import yaboichips.JunkMod.classes.MooseEntityEvents;
 import yaboichips.JunkMod.client.entity.render.MooseRender;
 import yaboichips.JunkMod.lists.BlockList;
 import yaboichips.JunkMod.lists.ItemList;
@@ -51,6 +53,7 @@ public class JunkMod {
         LOGGER.debug("Ethan's Junk Mod: Common Setup event starting...");
         OreGenerator.addFeatures();
         TreeGenerator.addFeatures();
+        MooseEntityEvents.registerEntityWorldSpawns();
         LOGGER.info("Ethan's Junk Mod: Common Setup event finished.");
     }
 

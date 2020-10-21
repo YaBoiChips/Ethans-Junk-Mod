@@ -80,7 +80,7 @@ public class ItemRegistry {
                 ItemList.handle = new Item(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("handle"),
                 ItemList.pommel = new Item(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("pommel"),
                 ItemList.hilt = new Item(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("hilt"),
-                ItemList.pebble = new PebbleItem(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("pebble"),
+                ItemList.wood_shard = new PebbleItem(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("wood_shard"),
                 ItemList.blue_lightsaber_hilt = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("blue_lightsaber_hilt"),
                 ItemList.green_lightsaber_hilt = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("green_lightsaber_hilt"),
                 ItemList.red_lightsaber_hilt = new LightsaberHandleClass(new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("red_lightsaber_hilt"),

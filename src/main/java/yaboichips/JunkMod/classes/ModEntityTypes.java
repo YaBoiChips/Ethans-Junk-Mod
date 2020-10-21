@@ -14,7 +14,7 @@ public class ModEntityTypes {
 
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.ENTITIES, JunkMod.JUNKMOD);
 
-    public static final EntityType<MooseEntity> MOOSE_ENTITY = register("moose_entity", EntityType.Builder.create(MooseEntity::new, EntityClassification.CREATURE).size(0.6f, 0.5f));
+    public static final EntityType<MooseEntity> MOOSE_ENTITY = register("moose_entity", EntityType.Builder.create(MooseEntity::new, EntityClassification.AMBIENT).size(0.6f, 0.5f));
     public static final EntityType<PebbleEntity> PEBBLE = register("pebble", EntityType.Builder.<PebbleEntity>create(PebbleEntity::new, EntityClassification.MISC).size(0.25F, 0.25F));
     private static <T extends Entity> EntityType<T> register(String key, EntityType.Builder<T> builder) {
         return Registry.register(Registry.ENTITY_TYPE, key, builder.build(key));

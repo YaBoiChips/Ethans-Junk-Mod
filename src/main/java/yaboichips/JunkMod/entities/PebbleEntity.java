@@ -38,7 +38,7 @@ public class PebbleEntity extends ProjectileItemEntity {
 
 
     protected Item getDefaultItem() {
-        return ItemList.pebble;
+        return ItemList.wood_shard;
     }
 
     @OnlyIn(Dist.CLIENT)

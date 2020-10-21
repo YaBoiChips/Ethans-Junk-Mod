@@ -1,5 +1,6 @@
 package yaboichips.JunkMod.classes;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
@@ -39,14 +40,70 @@ public class ItemClass {
                 (new ArmorItem(Flannel.FLANNEL, EquipmentSlotType.LEGS, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_leggings")),
                 (new ArmorItem(Flannel.FLANNEL, EquipmentSlotType.FEET, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("flannel_boots")),
 
+                (new ClubItem(ClubTier.CLUB_TIER, 1, 3.0f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("wooden_club")),
+
                 ItemList.blue_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -1.2f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("blue_lightsaber")),
                 ItemList.green_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -1.2f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("green_lightsaber")),
                 ItemList.purple_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 9, -1.2f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("purple_lightsaber")),
                 ItemList.red_lightsaber = (new LightsaberItem(ModItemTier.SABER_TIER, 10, -1.2f, new Item.Properties().group(JunkMod.JUNKTAB)).setRegistryName("red_lightsaber")));
     }
 
+    public enum ClubTier implements IItemTier {
+        CLUB_TIER(1, 100,0.7f, 2.0f, 69, () -> {
+            return Ingredient.fromItems(Items.OAK_LOG);
+        });
+
+        private final int maxUses;
+        private final float efficiency;
+        private final float attackDamage;
+        private final int harvestLevel;
+        private final int enchantability;
+        private final LazyValue<Ingredient> repairMaterial;
+
+        ClubTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial) {
+            this.harvestLevel = harvestLevel;
+            this.maxUses = maxUses;
+            this.attackDamage = attackDamage;
+            this.efficiency = efficiency;
+            this.enchantability = enchantability;
+            this.repairMaterial = new LazyValue<>(repairMaterial);
+        }
+
+
+        @Override
+        public int getMaxUses() {
+            return this.maxUses;
+        }
+
+        @Override
+        public float getEfficiency() {
+            return this.efficiency;
+        }
+
+        @Override
+        public float getAttackDamage() {
+            return this.attackDamage;
+        }
+
+        @Override
+        public int getHarvestLevel() {
+            return this.harvestLevel;
+        }
+
+        @Override
+        public int getEnchantability() {
+            return this.enchantability;
+        }
+
+        @Override
+        public Ingredient getRepairMaterial() {
+            return this.repairMaterial.getValue();
+        }
+    }
+
+
     public enum ModItemTier implements IItemTier {
-        SABER_TIER(4, -1, 0.1f, 3.0f, 66, () -> {
+        SABER_TIER(4, -1, 0.1f, 3.0f, 69, () -> {
             return Ingredient.fromItems(ItemList.steel_ingot);
         });
 

@@ -77,5 +77,5 @@ public class ItemList {
     public static Item red_lightsaber_hilt;
     public static Item marthas_drumstick_cake;
     public static Item moose_spawn_egg;
-    public static Item pebble;
+    public static Item wood_shard;
 }
